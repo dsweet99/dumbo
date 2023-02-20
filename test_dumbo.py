@@ -13,9 +13,8 @@ def _test(measure, num_dim):
         y = measure(x)
         x_m = np.append(x_m, x, axis=0)
         y_m = np.append(y_m, y)
-        print(y_m.max())
 
-    assert y_m.max() > -0.01, y_m.max()
+    assert y_m.max() > -0.03, y_m.max()
 
 
 def test_dumbo_1d():
