@@ -15,3 +15,5 @@ black --line-length=160 -q $FILES
 echo
 echo Lint:
 ruff --config ruff.toml --force-exclude --fix --fixable I001 $FILES
+
+nb-clean clean DumBO.ipynb
